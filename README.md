@@ -1,42 +1,42 @@
-﻿#  Thor Scraper
+# 🔨 Thor Scraper
 
 > Bulk Onion Site Crawler over the Tor Network - Cyber Threat Intelligence Tool
 
-##  Project Description
+## 📋 Project Description
 
 Thor Scraper is a CTI (Cyber Threat Intelligence) tool built in Go (Golang). It crawls .onion addresses over the Tor network in bulk, saves their content, and produces status reports.
 
-##  Features
+## 🎯 Features
 
--  Target list support in YAML format
--  Anonymous connection via Tor SOCKS5 proxy
--  IP leak protection
--  Automatic Tor connection verification
--  Fault tolerance (dead sites do not stop the program)
--  HTML content saving
--  Detailed JSON report output
--  Console and file logging
+- ✅ Target list support in YAML format
+- ✅ Anonymous connection via Tor SOCKS5 proxy
+- ✅ IP leak protection
+- ✅ Automatic Tor connection verification
+- ✅ Fault tolerance (dead sites do not stop the program)
+- ✅ HTML content saving
+- ✅ Detailed JSON report output
+- ✅ Console and file logging
 
-##  Project Structure
+## 📁 Project Structure
 
 ```
 thor-scraper/
- main.go
- go.mod
- go.sum
- targets.yaml
- output/
-    DuckDuckGo_20241231_120000.html
-    BBC_News_20241231_120100.html
-    scan_results.json
- screenshots/
-    DuckDuckGo_20241231_120000.png
-    BBC_News_20241231_120100.png
- logs/
-     scan_report.log
+├── main.go
+├── go.mod
+├── go.sum
+├── targets.yaml
+├── output/
+│   ├── DuckDuckGo_20241231_120000.html
+│   ├── BBC_News_20241231_120100.html
+│   └── scan_results.json
+├── screenshots/
+│   ├── DuckDuckGo_20241231_120000.png
+│   └── BBC_News_20241231_120100.png
+└── logs/
+    └── scan_report.log
 ```
 
-##  Installation
+## 🛠️ Installation
 
 ### Requirements
 
@@ -70,7 +70,7 @@ go run main.go
 go build -o thor-scraper.exe main.go
 ```
 
-##  Usage
+## 🚀 Usage
 
 ### Basic Usage
 
@@ -79,7 +79,7 @@ go build -o thor-scraper.exe main.go
 go run main.go
 
 # Specify a custom target file
-go run main.go hedeflerim.yaml
+go run main.go mytargets.yaml
 ```
 
 ### Target File Format (targets.yaml)
@@ -97,7 +97,7 @@ go run main.go hedeflerim.yaml
 - sitedomain1234567890abcdef.onion
 ```
 
-##  Outputs
+## 📊 Outputs
 
 ### 1. Console Output
 
@@ -140,7 +140,7 @@ go run main.go hedeflerim.yaml
 HTML content from each successful scan is saved to the `output/` folder:
 - `sitename_onion_20240115_143005.html`
 
-##  Modules
+## 🔧 Modules
 
 ### Module 1: File Reading (Input Handler)
 - Read URLs from YAML/text file
@@ -162,14 +162,14 @@ HTML content from each successful scan is saved to the `output/` folder:
 - Generate JSON report
 - Write log file
 
-##  Security Warnings
+## ⚠️ Security Warnings
 
 1. **Tor Service** must be running
 2. Tor connection is verified before the program starts
 3. DNS leak prevention is active
 4. All traffic passes through SOCKS5 proxy
 
-##  Sample Output
+## 📝 Sample Output
 
 ```
 ==========================================
@@ -184,16 +184,17 @@ Detailed report: output/scan_results.json
 ==========================================
 ```
 
-##  Libraries Used
+## 📚 Libraries Used
 
 - `net/http` - HTTP requests
 - `golang.org/x/net/proxy` - SOCKS5 proxy support
 - `os`, `bufio` - File operations
 - `encoding/json` - JSON handling
 
-##  Warning
+## ⚠️ Warning
+This project is for educational and research purposes only.
+Use it only on websites you own or have explicit permission to scrape.
+Respect robots.txt, website terms of service, and data protection laws.
 
-This tool was created **for educational and research purposes only** to explore Go programming, concurrency (goroutines), and web scraping techniques over anonymizing networks.
 
-
-** Thor Scraper - A Powerful Tool for Cyber Threat Intelligence**
+**⚡ Thor Scraper - A Powerful Tool for Cyber Threat Intelligence**
