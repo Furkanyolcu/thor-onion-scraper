@@ -1,0 +1,19 @@
+{
+  "start_time": "",
+  "end_time": "",
+  "total_urls": 1,
+  "success_count": 1,
+  "fail_count": 0,
+  "results": [
+    {
+      "url": "",
+      "status": "",
+      "timestamp": "",
+      "file_path": "",
+      "screenshot_path": "",
+      "links_extracted": [
+        ""
+      ]
+    }
+  ]
+}
